@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(pink, blue);
+  font-family: sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+}
+
+.transForm {
+  padding: 40px;
+  border-style: solid;
+  border-color: burlywood;
+  border-width: 5px;
+  border-radius: 10px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.transForm__textbox {
+  font-size: 20px;
+}
