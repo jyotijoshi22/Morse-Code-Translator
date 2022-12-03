@@ -16,9 +16,18 @@ textInputButton.addEventListener("click", () => {
 });
 
 //morse to text button clicked
+
 morseInputButton.addEventListener("click", () => {
   outputText.value = morseToText(inputText.value);
-  console.log(outputText.value);
+
+  //CHECK THE VALIDITY OF MORSE CODE
+  // let inp = inputText.value;
+  // if (inp.match(/^[.-]{1,5}(?: [.-]{1,5})*(?:   [.-]{1,5}(?: [.-]{1,5})*)*$/)) {
+  //   outputText.value = morseToText(inputText.value);
+  //   console.log(outputText.value);
+  // } else {
+  //   outputText.value = "NOT VALID MORSE CODE";
+  // }
 });
 
 clearText.addEventListener("click", () => {
