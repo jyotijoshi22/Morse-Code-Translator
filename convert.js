@@ -1,7 +1,9 @@
 import { textToMorseCode, morseToTextCode } from "./dictionary.js";
 
 export const textToMorse = (english) => {
+  //some code to check if user has entered proper input
   return english
+    .trim()
     .toUpperCase()
     .split("")
     .map((el) => {
@@ -11,6 +13,7 @@ export const textToMorse = (english) => {
 };
 
 export const morseToText = (morse) => {
+  //some code to check if user has entered proper input
   return morse
     .split("   ") // get word code, 3 spaces apart
     .map(

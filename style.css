@@ -21,3 +21,36 @@ body {
 .transForm__textbox {
   font-size: 20px;
 }
+.transForm__button__button1 {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.transForm .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  font-size: small;
+}
+.transForm .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.transForm .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
