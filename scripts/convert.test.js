@@ -12,18 +12,12 @@ describe("Testing English to Morse", () => {
     expect(textToMorse("a a", textToMorseCode)).toBe(".-   .-");
     expect(textToMorse("a      ", textToMorseCode)).toStrictEqual(".-");
   });
-  it("Should convert morse code to english text", () => {
-    expect(morseToText(".-", morseToTextCode)).toBe("a");
-    expect(morseToText("- . -..- -", morseToTextCode)).toBe("text");
-  });
 
   it("Should handle spaces correctly for english text and morse code", () => {
     expect(textToMorse("morse code", textToMorseCode)).toBe(
       "-- --- .-. ... .   -.-. --- -.. ."
     );
-    expect(morseToText(".. -   .-- --- .-. -.- ...", morseToTextCode)).toBe(
-      "it works"
-    );
+
     expect(textToMorse("a b c", textToMorseCode)).toBe(".-   -...   -.-.");
   });
 
@@ -34,6 +28,19 @@ describe("Testing English to Morse", () => {
 
     expect(textToMorse("-'dash'?", textToMorseCode)).toBe(
       "-....- .----. -.. .- ... .... .----. ..--.."
+    );
+  });
+});
+
+describe("Testing Morse to English", () => {
+  it("Should convert morse code to english text", () => {
+    expect(morseToText(".-", morseToTextCode)).toBe("a");
+    expect(morseToText("- . -..- -", morseToTextCode)).toBe("text");
+  });
+
+  it("Should handle spaces correctly for english text and morse code", () => {
+    expect(morseToText(".. -   .-- --- .-. -.- ...", morseToTextCode)).toBe(
+      "it works"
     );
   });
 });
