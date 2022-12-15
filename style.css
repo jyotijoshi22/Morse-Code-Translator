@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(pink, blue);
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+
+.transForm {
+  padding: 80px;
+  border-style: solid;
+  border-color: black;
+  border-width: 6px;
+  border-radius: 10px 50px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 576px) {
+  .transForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .transForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+.transForm__textbox {
+  font-size: 20px;
+  max-width: 100%;
+}
+.transForm__button__button1 {
+  background-color: white;
+  border: none;
+  color: Black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+  .transForm__button__button1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .transForm__button__button1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+.transForm__button__button1:hover {
+  background-color: pink;
+}
+.transForm .tooltip {
+  text-align: center;
+  font-size: small;
+  padding: 3px;
+  background-color: white;
+  color: black;
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .transForm .tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) and (max-width: 576px) {
+  .transForm .tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}

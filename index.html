@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts/script.js" type="module" defer></script>
 
+    <title>Morse Code Translator</title>
+  </head>
+  <body>
+    <header>
+      <h1>MORSE CODE TRANSLATOR</h1>
+    </header>
+
+    <form class="transForm">
+      <label for="inputTextOrMorse">INPUT:</label>
+
+      <textarea
+        id="inputTextOrMorse"
+        class="transForm__textbox"
+        cols="30"
+        rows="2"
+      >
+      </textarea>
+
+      <div class="transForm__button">
+        <button
+          class="transForm__button__button1"
+          type="button"
+          id="transText"
+          value="text"
+        >
+          Text To Morse
+        </button>
+        <button
+          type="button"
+          id="transMorse"
+          value="morse"
+          class="transForm__button__button1"
+        >
+          Morse to Text
+        </button>
+
+        <button class="transForm__button__button1" type="button" id="clear">
+          Clear
+        </button>
+        <br />
+      </div>
+
+      <label id="outputLabel" for="outputText">OUTPUT:</label>
+      <br />
+      <textarea
+        id="outputText"
+        class="transForm__textbox"
+        cols="30"
+        rows="2"
+      ></textarea>
+      <div class="tooltip">
+        Need help to enter Morse Code? a: .- , b: -... , c: -.-. , d: -.. , e: .
+        , f: ..-. , g: --. , h: .... , i: .. , j: .--- , k: -.- , l: .-.. , m:
+        -- , n: -. , o: --- , p: .--. , q: --.- , r: .-. , s: ... , t: - , u:
+        ..- , v: ...- , w: .-- , x: -..- , y: -.-- , z: --..
+      </div>
+    </form>
+  </body>
+</html>
